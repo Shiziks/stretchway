@@ -1,0 +1,10 @@
+/* .navbar{
+    min-height: 75px;
+
+} */
+.navbar-brand>img{
+    width:23%;
+}
+.hidden{
+    display: none;
+}

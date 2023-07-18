@@ -1,0 +1,31 @@
+    <div class="container-fluid welcome">
+        <div class="row welcomeMessage">
+            <div class="col-xxs-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto text-center">
+                <h1>Welcome</h1>
+                <p class="welcomeMessage">
+                    to StretchWay - your personal stretching assistant!
+                </p>
+                <p class="instruction mt-5 m-2">
+                    To start please select what body part you want to stretch:
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xxs-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto text-center">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-lg dropdown" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Select a body part
+                    </button>
+                    <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenu2">
+                      <li><button class="dropdown-item p-3" type="button" (click)="bodyPart('legs')">Legs</button></li>
+                      <li><button class="dropdown-item p-3" type="button" (click)="bodyPart('back')">Back</button></li>
+                      <li><button class="dropdown-item p-3" type="button" (click)="bodyPart('hips')">Hips</button></li>
+                      <li><button class="dropdown-item p-3" type="button" (click)="bodyPart('shoulders')">Shoulders</button></li>
+                      <li><button class="dropdown-item p-3" type="button" (click)="bodyPart('body')">Whole body</button></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+

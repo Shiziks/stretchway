@@ -1,0 +1,74 @@
+
+.welcome{
+    min-height: 65vh;
+    margin-top:10%;
+    max-height: 100vh;
+}
+
+h1{
+    color: #8100CA;
+    /* Side hamstring stretch */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 54px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(129, 0, 202, 0.15);
+}
+p{
+    color: #8100CA;
+    /* Side hamstring stretch */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+p.instruction{
+    color: #8100CA;
+    /* Side hamstring stretch */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.dropdown>button{
+    width: 80%;
+    margin:0px auto;
+}
+button.dropdown{
+    background-color: #8100CA;
+    color: #F1FF99;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    box-shadow: 2px 2px 10px rgba(129, 0, 202, 0.3);
+    border-radius:3px;
+}
+button.dropdown:hover{
+    background-color: #AE4CD5;
+    border-color:#AE4CD5;
+    box-shadow: 2px 2px 10px rgba(129, 0, 202, 0.3);
+}
+li>button:hover{
+    background-color: #F8FFCC;
+    border-bottom: 1px solid #AE4CD5;
+}
+button:focus, .btn-show{
+    background-color: #8100CA;
+    border-color:#8100CA;
+    box-shadow: 2px 2px 10px rgba(129, 0, 202, 0.3);
+}
+
+ul.dropdown-menu{
+    width: 80%;
+    margin:0px auto;
+    background-color: #F1FF99;
+    border-bottom:3px solid #8100CA;
+    border-right: 4px solid #8100CA;
+    box-shadow: 2px 2px 10px rgba(129, 0, 202, 0.3);
+
+}
+ul>li>button{
+    color:#8100CA;
+    border-bottom:2px solid #8100CA;
+    font-weight: 400;
+    font-size:18px;
+
+}

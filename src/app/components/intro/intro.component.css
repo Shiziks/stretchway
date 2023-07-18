@@ -1,0 +1,16 @@
+.logoCenter{
+    position:absolute;
+    transform:translate(0,-50%);
+    top:50%;
+}
+
+.logoImage>img{
+    max-width: 100%;
+}
+
+p.slogan{
+    font-family: 'Poppins', sans-serif;
+    font-size:27px;
+    font-weight: 400;
+    color: #F1FF99;
+}

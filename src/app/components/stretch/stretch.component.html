@@ -1,0 +1,73 @@
+    <ng-container *ngIf="data">
+        <div class="container-fluid middle mt-5">
+            <div class="row text-center">
+                <div class="col">
+                    <ng-container *ngIf="data.sides; else oneSide">
+                        <h1 class="stretchName">{{data.name}} - {{side}} SIDE</h1>
+                    </ng-container>
+                    <ng-template #oneSide>
+                        <h1 class="stretchName">{{data.name}}</h1>
+                    </ng-template>
+                </div>
+            </div>
+            <div class="row text-center imageRow stretchDesc mt-5">
+                <div class="col-6">
+                    <div class="stretchImage img-fluid">
+                        <img src={{data.image}} alt="">
+                    </div>
+                </div>
+                <div class="col-6 descText">
+                    <ul class="descList p-0 m-0 text-start ">
+                        <ng-container *ngFor="let d of data.description">
+                            <li class="p-1">- {{d}}</li>
+                        </ng-container>
+                        <!-- <li class="p-1">Keep the spine lengthened through the torso and firm your abdominals.</li>
+                        <li class="p-1">Squeeze your knees and reach through your toes to extend your legs.</li>
+                        <li class="p-1">Draw the hands overhead and take your gaze to your fingertips.</li>
+                        <li class="p-1">Be cautious of your low spine and hyperextension.</li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="row stretchDesc mt-5">
+                <div class="col-6 descText mx-auto">
+                    <ul class="descList p-0 m-0">
+                        <ng-container *ngFor="let d of data.description">
+                            <li class="p-1">- {{d}}</li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="row timerClockRow mt-5">
+                <div class="col-6 timerClock mx-auto text-center">
+                    <span class="clock"></span>
+                    <countdown #cd [config]="{leftTime: 30, demand: true, format: 'm:s'}" class="timerClock"></countdown>
+                </div>
+            </div>
+            <div class="row button mt-5 pb-3 d-flex justify-content-center">
+                <div class="col-3 buttonBack text-end">
+                    <div class="btn btn-secondary align-items-center" (click)="goBack()">
+                        <fa-icon [icon]="leftSign" class="me-2"></fa-icon>Back to menu</div>
+                </div>
+                <div class="col-3 buttonStart text-end">
+                    <div class="btn btn-secondary" (click)="cd.stop()">Stop</div>
+                </div>
+                <div class="col-3 buttonStart text-start">
+                    <div class="btn btn-secondary" (click)="cd.restart(); cd.begin()">Start / Restart</div>
+                </div>
+                <div class="col-3 buttonBack text-start">
+                    <div class="btn btn-secondary align-items-center" (click)="nextStretch()">
+                        Next Stretch <fa-icon [icon]="rightSign" class="ms-2"></fa-icon></div>
+                </div>
+            </div>
+    
+            <div class="row button mt-5 pb-5 d-flex justify-content-center">
+
+       
+            
+            </div>
+    
+    
+        </div>
+    </ng-container>
+
+

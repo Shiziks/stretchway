@@ -1,0 +1,20 @@
+footer{
+    margin: 0px auto;
+    color:#8100CA;
+    position:relative;
+    bottom:0px;
+    /* z-index: 0;
+    height: 100px;
+    width: 100%;
+    position: fixed; 
+    bottom: 0px; 
+    overflow: hidden; */
+}
+footer>.row{
+    max-width: 100%;
+}
+footer>p, ul>li>a{
+    color:#8100CA;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}

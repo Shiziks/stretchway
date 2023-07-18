@@ -1,0 +1,138 @@
+{
+    "legs":[ 
+        {
+        "name":"Half Splits",
+        "image":"assets/images/stretches/legs/halfSplits.jpg",
+        "description": ["One leg extended to the front.", "Hips paralel with the leg that is placed on the knee.", "Hands can be placed on the block or on the floor.", "You can bend the knee more or less, depending on your needs.","Try to elongate through the spine, like you are stretching forward from your hips."],
+        "sides": 1
+        },
+        {
+            "name":"Pyramid Pose",
+            "image":"assets/images/stretches/legs/pyramidPose.jpg",
+            "description": ["One leg extended to the front.", "Feet hip distance appart.", "Back foot at 45 degrees angle or any other that is comfortable.", "Front leg slightly bent, or if comfortable straight.", "Hands can be placed on the block, for support.", "Hips facing front, no tilting front with the hip of the front leg.", "Spine is elongated, reaching forward."],
+            "sides": 1
+        },
+        {
+            "name":"Side Lunge Pose",
+            "image":"assets/images/stretches/legs/skandasana.jpeg",
+            "description": ["Keep the knee of the extended leg slightly bent.", "For a more comfortable option, lift the heel of the bent leg.", "Block can be placed under the hips, or under the hands for added support.", "Sink your hips as low as it is comfortable for you, no need to go very deep.", "Elongate the spine, trying not to round.", "Actively opening the hip of the bent leg, you can even use the elbow to push the knee to the side.", "Extended leg can be placed on the heel, or plant the foot down."],
+            "sides": 1
+        },
+        {
+            "name":"Seated Wide Legged Forward Fold",
+            "image":"assets/images/stretches/legs/wideleggedFF.jpeg",
+            "description": ["Open up the legs as much as it is comfortable for you.", "If needed sit on the blosk, to elevate the hips.", "Try to keep the heels down, and toes pointing up.", "No need to forward fold here, you can place your back on the wall as well.", "If comfortable place your elbows or head on the blocks.", "If comfortable try reaching your belly to the floor while wlongating from the hips forward.", "Keep your knees bent for comfort and support."],
+            "sides": 0
+        },
+        {
+            "name":"Standing Forward Fold",
+            "image":"assets/images/stretches/legs/standingFF.webp",
+            "description": ["Place your feet hip distance appart.", "Keep the knees bent if you need to.", "Elevate the hands on the knees, or blocks, for supprot.", "Try to elngate the spine so that you feel most of the stretch in the hamstrings.", "Think about lenghtening from the feet up to the hips and from the hips down to the top of the head."],
+            "sides": 0
+        }
+    ],
+    "hips": [
+        {
+        "name":"Pigeon Pose",
+        "image":"assets/images/stretches/hips/pigeonPose.jpeg",
+        "description": ["When doing the pigeon pose, make sure you feel comfortable in the hips, as well as in the knee of the front leg.", "Try not to sit on the front leg, but to balance on both hips equally.", "Back leg should be extended, and knee rotated towards the ground.", "You can keep your chest upright, or place the elbows on the floor.", "For extra comfort you can place the block under the hips."],
+        "sides": 1
+    },
+    {
+        "name":"Butterfly Pose",
+        "image":"assets/images/stretches/hips/butterflyPose.jpeg",
+        "description": ["Sit on the floor, feet together, and knees fall to the sides.", "You can place your back on the wall, or sit on the block for more comfort.", "Try not to round your back.", "If you can hold on to your feet.", "Work on bringing the knees down to the floor.", "You can also do it dinamically, pulsing your knees up and down."],
+        "sides": 0
+    },
+    {
+        "name":"Low Lunge",
+        "image":"assets/images/stretches/hips/lowLunge.jpeg",
+        "description": ["One leg to the front, and one to the back.", "Knee of the back leg placed on the floor.", "You can keep your hands on the floor, place them on the hips, or lift them up.", "Knee of the front leg should not go pass your toes for this stretch.", "For a deeper stretch place the knee of the back leg on the block."],
+        "sides": 1
+    },
+    {
+        "name":"Hero Pose",
+        "image":"assets/images/stretches/hips/heroPose.jpeg",
+        "description": ["Sit on your heels, and try to keep your knees together.", "Open up your feet and try to lover your hips to the floor, between your heels.", "For more comfort you can place the block between your heels, and sit on the block.", "If you can go deeper, you can try to lay your back on the floor, or firt place the elbows down."],
+        "sides": 0
+
+    },
+    {
+        "name":"Figure Four Pose",
+        "image":"assets/images/stretches/hips/figureFour.jpeg",
+        "description": ["Lay on your back, and place one foot over the opposite leg thigh.", "Think about opening up through the bent leg.", "If this is comfortable, you can deepen the stretch by interlacing the fingers behind the leg.", "Try to find a stretch in the outer part of your hip."],
+        "sides": 1
+    }
+],
+    "shoulders": [
+        {
+            "name":"Puppy Pose",
+            "image":"assets/images/stretches/shoulders/puppyPose.jpeg",
+            "description": ["Start kneeling and extend your arms to the front.", "Place your forehead down and reach with your chest down.", "For a deeper stretch you can try to place your chest and chin on the floor.", "To deepen you can also elevate your hands on the blocks."],
+            "sides": 0
+        },
+        {
+            "name":"Eagle Pose Arms",
+            "image":"assets/images/stretches/shoulders/eagleArms.webp",
+            "description": ["Place one hand over the other and try to interlace them.", "If you can not bring the palms together, than grab the opposite hand writst or forearm.", "You can lift the elbows up, or bring them closer to the chest.", "You can also move the hands from one side of the body to the other side, making this a dinamyc move."],
+            "sides": 1
+        },
+        {
+            "name":"Elbow Grab",
+            "image":"assets/images/stretches/shoulders/elbowGrab.jpeg",
+            "description": ["Stand or sit in a comfortable pose.", "Place the hands behind your back and grab the oposite elbows.", "Try to pull each elbow towards the opposite one.", "If the is easy you can also make fists, place one fist next to another, and push.", "If this all is too much, you can also grab a strap and hold on to a strap."],
+            "sides": 0
+        },
+        {
+            "name":"Dolphin Pose",
+            "image":"assets/images/stretches/shoulders/dolphinePose.jpeg",
+            "description": ["Start on all four, and place the elbows right underneath the shoulders.", "You can choose to interlace the fingers or not.", "Push through the elbows down, and lift the knees up  from the floor.", "Think about opening through the shoulders as if you want to bring the chest closer to your legs.", "Keep the knees bent as much as needed, and if it is comfortable try walking your feet a bit closer."],
+            "sides": 0
+        },
+        {
+            "name":"Inwerted Table Top Pose",
+            "image":"assets/images/stretches/shoulders/inwertedTable.jpeg",
+            "description": ["Sit with the knees bent, and place the hands behind you.", "Idealy turn your fingers towards your body, and not to the side or away.", "Lift the hips and think about opening up through the shoulders.", "You can look up or towards the kees.", "Try not to sink through the hips.", "To minimize sinking through the hips you can also place bloks underneath your hips."],
+            "sides": 0
+        }
+
+],
+    "back": [
+        {
+        "name":"Plough",
+        "image":"assets/images/stretches/back/halasana.jpeg",
+        "description": ["Lift your legs over your head.", "Place the hands on your back for support if needed.","You can keep the legs hovering off of the floor, or place them on an elevated surface.", "Keep the knees bent for more comfort.", "Try not to rotate your neck.","Let the back round as much as it is comfortable for you."],
+        "sides":0
+        },
+        {
+            "name":"Deep Squat",
+            "image":"assets/images/stretches/back/malasana.jpeg",
+            "description": ["Place your feet hip distance, or more, appart.", "Squat down and place the nads on the floor.", "Reach far to the front with your hands to elongate the back.", "If comfortable let the head hang, or even lover it to the floor.", "Let the hips pull you back, while the hands pull you front."],
+            "sides":0
+        },
+        {
+            "name":"Gate Pose",
+            "image":"assets/images/stretches/back/gatePose.jpeg",
+            "description": ["Begin on all four, and extend one leg to the side.", "Lift up the upper part of the body, and stack it above the standing leg.", "Lift the same arm as the standing leg and bend towards the extended leg.", "Try not to collaps through the chest towards the floor.", "Elongate from the knee of the standing leg, all the way to the hand."],
+            "sides":1
+        },
+        {
+            "name":"Round The Back",
+            "image":"assets/images/stretches/back/backFlexion.jpeg",
+            "description": ["Begin standing or sitting in a comfortable position.", "Lift the hands in front of you and interlace the fingers.","Exhale and round the back, pushing the hands away from you.", "Tuck the chin towards the chest if it feels ok.", "You can slowly move your hands from one side to another."],
+            "sides":0
+        },
+        {
+            "name":"Spine Rotation",
+            "image":"assets/images/stretches/back/spineRotation.jpeg",
+            "description": ["Sit and cross one leg over the other placing the foot next to the knee.", "Breathe in, and move your bent knee to the opposite side.", "Exhale and rotate the torso towards the knee.", "Use the hand to hold on to the knee, and even pull it more to the opposite side."],
+            "sides":1
+        },
+        {
+            "name":"Seated Side Bend",
+            "image":"assets/images/stretches/back/seatedSideBend.jpeg",
+            "description": ["Start sitting on the flooor, with legs opened wide.", "Bend one knee and bring the foot to the inside of the opposite thigh, or knee.", "Lift the same arm, as the bent leg, and elongate it up.", "Bend towards the extended leg, and hold.", "If you want a different focus, you can try reaching your upper arm towards the foot of the extended leg."],
+            "sides":1
+        }
+]
+}

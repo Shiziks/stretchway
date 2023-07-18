@@ -1,0 +1,12 @@
+.content{
+    display: flex;
+    flex-flow: column;
+}
+
+.innerContent{
+    flex:1
+}
+
+app-footer{
+    flex:auto;
+}
