@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DataServiceService } from 'src/app/services/data-service.service';
 import { Area, Stretches } from 'src/app/interfaces/stretches';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { merge } from 'rxjs';
 
 
 @Component({
@@ -22,6 +23,7 @@ export class StretchComponent implements OnInit {
   dataAll!:Area[];
   side:string='RIGHT';
   sidesFlag:boolean=false;
+  newData:any=[];
 
   constructor(private activatedRoute:ActivatedRoute, 
     private stretchService:DataServiceService,
@@ -29,27 +31,29 @@ export class StretchComponent implements OnInit {
 
   ngOnInit(): void {
     let value:string='';
-  //  this.activatedRoute.params.subscribe((val:any)=>{
-  //     console.log(val.id);
-  //     this.value=val.id;
-  //   });
-
+    let newNew:any=[];
     this.stretchService.getStretchData().subscribe((data)=>{
       this.activatedRoute.params.subscribe((val:any)=>{
-        console.log(val.id);
-        value=val.id;
+        this.value=val.id;
       });
-      this.dataAll=data[value];
-      console.log(data[value]);
-      this.len=data[value].length;
-      console.log(this.len);
-      this.data=data[value][0];
-      console.log(data[value][0]);
+      if(this.value=="body"){
+        Object.entries(data).forEach(([section, arrayValue], index) => {
+          newNew=[...newNew, ...arrayValue as any];
+      });
+      this.dataAll=newNew;
+      this.len=this.dataAll.length;
+      this.data=this.dataAll[0];
+    }
+      else{
+        this.dataAll=data[this.value];
+        this.len=data[this.value].length;
+        this.data=data[this.value][0];
+      }
+      
     });
   }
 
   goBack(){
-    console.log("go back");
     this.router.navigate(['/welcome']);
   }
 
@@ -75,5 +79,6 @@ export class StretchComponent implements OnInit {
       this.toNextStretch();
     }
   }
+
 
 }
