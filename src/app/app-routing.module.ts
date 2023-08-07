@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomePAgeComponent } from './components/welcome-page/welcome-page.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { StretchComponent } from './components/stretch/stretch.component';
+import { HelpComponent } from './shared/components/help/help.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,11 @@ const routes: Routes = [
     component: StretchComponent,
     title: 'Stretch page'
   },
+  {
+    path:'help',
+    component: HelpComponent,
+    title: "How to use this method"
+  }
   // {
   //   path: '**',
   //   //404 page

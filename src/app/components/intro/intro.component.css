@@ -10,7 +10,53 @@
 
 p.slogan{
     font-family: 'Poppins', sans-serif;
-    font-size:27px;
-    font-weight: 400;
+    font-size:1.2rem;
+    font-weight: 300;
     color: #F1FF99;
 }
+
+@media screen and (max-width:1400px){
+    .column{
+        padding-left:7%;
+        padding-right: 7%;
+    }
+    p.slogan{
+        font-size: 2.5rem!important;
+    }
+}
+@media screen and (max-width:992px){
+    .column{
+        padding-left:7%;
+        padding-right: 7%;
+    }
+    p.slogan{
+        font-size: 2rem!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    p.slogan{
+    font-size: 1.7rem!important;
+    }
+
+    .column{
+        padding-left:7%;
+        padding-right: 7%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    p.slogan{
+    font-size: 16px!important;
+    }
+    .column{
+        padding-left:7%;
+        padding-right: 7%;
+    }
+
+    /* .logoImage>img{
+        max-width: 150%;
+    } */
+}
+
+
+

@@ -2,6 +2,7 @@
 .welcome{
     min-height: 65vh;
     margin-top:10%;
+    margin-bottom:10%;
     max-height: 100vh;
 }
 
@@ -72,3 +73,24 @@ ul>li>button{
     font-size:18px;
 
 }
+
+.helpSection>.h6{
+    color:#AE4CD5;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:768px){
+    h1{
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (max-width:576px){
+    h1{
+        font-size: 3em;
+    }
+}
+
+

@@ -1,12 +1,18 @@
 .content{
-    display: flex;
-    flex-flow: column;
+    /* display: flex;
+    flex-flow: column; */
+    position: relative;
+    min-height: 100vh;
 }
 
 .innerContent{
-    flex:1
+    /* flex:1; */
+    padding-bottom: 2.5rem;    /* Footer height */
 }
 
 app-footer{
     flex:auto;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
 }

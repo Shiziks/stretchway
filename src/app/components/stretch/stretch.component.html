@@ -11,13 +11,13 @@
                 </div>
             </div>
             <div class="row text-center imageRow stretchDesc mt-5">
-                <div class="col-6 p-0">
+                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0">
                     <div class="stretchImage img-fluid">
                         <img src={{data.image}} alt="">
                     </div>
                 </div>
-                <div class="col-6 descText">
-                    <ul class="descList p-0 m-0 text-start ">
+                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 descText">
+                    <ul class="descList p-0 m-0 text-start mt-3 mb-2">
                         <ng-container *ngFor="let d of data.description">
                             <li class="p-1">- {{d}}</li>
                         </ng-container>
@@ -38,23 +38,23 @@
                 </div>
             </div> -->
             <div class="row timerClockRow mt-5">
-                <div class="col-6 timerClock mx-auto text-center">
+                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 timerClock mx-auto text-center">
                     <span class="clock"></span>
                     <countdown #cd [config]="{leftTime: 30, demand: true, format: 'm:s'}" class="timerClock"></countdown>
                 </div>
             </div>
             <div class="row button mt-5 pb-3 d-flex justify-content-center">
-                <div class="col-3 buttonBack text-end">
+                <div class="col-xxs-12 col-xs-12 m-1 col-sm-12 m-sm-1 col-md-10 m-md-1 col-lg-10 m-lg-1 col-xl-3 m-xl-0 col-xxl-3 m-xxl-0 buttonBack text-end">
                     <div class="btn btn-secondary align-items-center" (click)="goBack()">
                         <fa-icon [icon]="leftSign" class="me-2"></fa-icon>Back to menu</div>
                 </div>
-                <div class="col-3 buttonStart text-end">
+                <div class="col-xxs-12 col-xs-12 m-1 col-sm-12 m-sm-1 col-md-10 m-md-1 col-lg-10 m-lg-1 col-xl-3 m-xl-0 col-xxl-3 m-xxl-0 buttonStart text-end">
                     <div class="btn btn-secondary" (click)="cd.stop()">Stop</div>
                 </div>
-                <div class="col-3 buttonStart text-start">
+                <div class="col-xxs-12 col-xs-12 m-1 col-sm-12 m-sm-1 col-md-10 m-md-1 col-lg-10 m-lg-1 col-xl-3 m-xl-0 col-xxl-3 m-xxl-0 buttonStart text-start">
                     <div class="btn btn-secondary" (click)="cd.restart(); cd.begin()">Start / Restart</div>
                 </div>
-                <div class="col-3 buttonBack text-start">
+                <div class="col-xxs-12 col-xs-12 m-1 col-sm-12 m-sm-1 col-md-10 m-md-1 col-lg-10 m-lg-1 col-xl-3 m-xl-0 col-xxl-3 m-xxl-0 buttonBack text-start">
                     <div class="btn btn-secondary align-items-center" (click)="nextStretch()">
                         Next Stretch <fa-icon [icon]="rightSign" class="ms-2"></fa-icon></div>
                 </div>

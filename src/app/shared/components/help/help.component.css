@@ -1,0 +1,49 @@
+h1{
+    color: #8100CA;
+    /* Side hamstring stretch */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 54px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(129, 0, 202, 0.15);
+}
+.introText{
+    color:#AE4CD5;
+    justify-content: right;
+    text-align: justify;
+}
+
+.buttonBack> .btn{
+    width: 100%;
+    background: #F1FF99;
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: #8100CA;
+    box-shadow: 2px 2px 10px rgba(129, 0, 202, 0.3);
+    border-radius: 3px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8100CA;
+}
+
+.goalTime{
+    color:#E788D5;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.goalSubtitle{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.question{
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#8100CA;
+    text-decoration: underline;
+}

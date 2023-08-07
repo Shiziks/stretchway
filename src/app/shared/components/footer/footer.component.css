@@ -2,7 +2,7 @@ footer{
     margin: 0px auto;
     color:#8100CA;
     position:relative;
-    bottom:0px;
+    /* bottom:0px; */
     /* z-index: 0;
     height: 100px;
     width: 100%;

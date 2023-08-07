@@ -5,22 +5,28 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HelpComponent } from './components/help/help.component';
+import { AppModule } from '../app.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
 @NgModule({
   declarations: [
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    HelpComponent
   ],
   imports: [
     CommonModule,
     SharedRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   exports:[
     FooterComponent,
-    NavbarComponent
+    NavbarComponent, 
+    HelpComponent
   ]
 })
 export class SharedModule { }
