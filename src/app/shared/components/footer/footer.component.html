@@ -6,12 +6,10 @@
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
           </a> -->
       
-          <ul class="col-xs-12 col-sm-12 order-xxs-0 nav col-md-4 justify-content-center px-0 order-first order-xs-first order-sm-first order-md-last order-lg-last order-xl-last">
-            <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+          <ul class="col-xs-12 col-sm-12 order-xxs-0 nav col-md-6 justify-content-center px-0 order-first order-xs-first order-sm-first order-md-last order-lg-last order-xl-last">
+            <li class="nav-item"><a [routerLink]="['welcome']" class="px-2">Intro page</a></li>
+            <li class="nav-item"><a [routerLink]="['help']" class="px-2">How to use</a></li>
+            <li class="nav-item"><a href = "mailto: shiziks@hotmail.com" class="px-2">Contact me</a></li>
           </ul>
     </div>
 </footer>
