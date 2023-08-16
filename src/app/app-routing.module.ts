@@ -30,11 +30,12 @@ const routes: Routes = [
     path:'help',
     component: HelpComponent,
     title: "How to use this method"
-  }
-  // {
-  //   path: '**',
-  //   //404 page
-  // },
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
+  },
  
 ];
 
