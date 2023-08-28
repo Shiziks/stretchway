@@ -24,6 +24,8 @@ export class StretchComponent implements OnInit {
   side:string='RIGHT';
   sidesFlag:boolean=false;
   newData:any=[];
+  timeout:any;
+  num:any=30;
 
   constructor(private activatedRoute:ActivatedRoute, 
     private stretchService:DataServiceService,
@@ -66,6 +68,7 @@ export class StretchComponent implements OnInit {
       this.currentItem=0;
       this.data=this.dataAll[this.currentItem];
     }
+    this.num=30;
   }
 
   nextStretch(){
@@ -78,6 +81,18 @@ export class StretchComponent implements OnInit {
       this.side="RIGHT";
       this.toNextStretch();
     }
+  }
+
+  startCount(audioTone:any){
+    this.timeout=setTimeout(()=>{
+      audioTone.play();
+      //Na kraju se pusta zvuk
+    },30000);
+  }
+
+  stopCount(){
+    //nema zvuka
+    clearTimeout(this.timeout);
   }
 
 

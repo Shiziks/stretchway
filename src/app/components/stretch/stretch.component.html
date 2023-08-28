@@ -11,13 +11,13 @@
                 </div>
             </div>
             <div class="row text-center imageRow stretchDesc mt-5">
-                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0">
-                    <div class="stretchImage img-fluid">
-                        <img src={{data.image}} alt="">
+                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0 imageCol my-auto">
+                    <div class="stretchImage">
+                        <img src={{data.image}} alt="" class="">
                     </div>
                 </div>
-                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 descText">
-                    <ul class="descList p-0 m-0 text-start mt-3 mb-2">
+                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 descText my-auto">
+                    <ul class="descList p-0 m-0 text-start">
                         <ng-container *ngFor="let d of data.description">
                             <li class="p-1">- {{d}}</li>
                         </ng-container>
@@ -28,19 +28,11 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="row stretchDesc mt-5">
-                <div class="col-6 descText mx-auto">
-                    <ul class="descList p-0 m-0">
-                        <ng-container *ngFor="let d of data.description">
-                            <li class="p-1">- {{d}}</li>
-                        </ng-container>
-                    </ul>
-                </div>
-            </div> -->
+
             <div class="row timerClockRow mt-5">
                 <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 timerClock mx-auto text-center">
                     <span class="clock"></span>
-                    <countdown #cd [config]="{leftTime: 30, demand: true, format: 'm:s'}" class="timerClock"></countdown>
+                    <countdown #cd [config]="{leftTime: num, demand: true, format: 'm:s'}" class="timerClock"></countdown>
                 </div>
             </div>
             <div class="row button mt-5 pb-3 d-flex justify-content-center">
@@ -49,10 +41,10 @@
                         <fa-icon [icon]="leftSign" class="me-2"></fa-icon>Back to menu</div>
                 </div>
                 <div class="col-xxs-12 col-xs-12 m-1 col-sm-12 m-sm-1 col-md-10 m-md-1 col-lg-10 m-lg-1 col-xl-3 m-xl-0 col-xxl-3 m-xxl-0 buttonStart text-end">
-                    <div class="btn btn-secondary" (click)="cd.stop()">Stop</div>
+                    <div class="btn btn-secondary" (click)="cd.stop(); stopCount()">Stop</div>
                 </div>
                 <div class="col-xxs-12 col-xs-12 m-1 col-sm-12 m-sm-1 col-md-10 m-md-1 col-lg-10 m-lg-1 col-xl-3 m-xl-0 col-xxl-3 m-xxl-0 buttonStart text-start">
-                    <div class="btn btn-secondary" (click)="cd.restart(); cd.begin()">Start / Restart</div>
+                    <div class="btn btn-secondary" (click)="cd.restart(); cd.begin(); startCount(audioTone)">Start / Restart</div>
                 </div>
                 <div class="col-xxs-12 col-xs-12 m-1 col-sm-12 m-sm-1 col-md-10 m-md-1 col-lg-10 m-lg-1 col-xl-3 m-xl-0 col-xxl-3 m-xxl-0 buttonBack text-start">
                     <div class="btn btn-secondary align-items-center" (click)="nextStretch()">
@@ -65,6 +57,7 @@
        
             
             </div>
+            <audio src="../../../assets/data/Atone.mp3" id="my_audio" #audioTone></audio>
     
     
         </div>
