@@ -1,9 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: RedHatBlack;
+    src: url(./assets/data/fonts/rh/RedHatDisplay-Black.ttf);
+}
+@font-face {
+    font-family: RedHatRegular;
+    src: url(./assets/data/fonts/rh/RedHatDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: RedHatLight;
+    src: url(./assets/data/fonts/rh/RedHatDisplay-Light.ttf);
+}
+@font-face {
+    font-family: RedHatMedium;
+    src: url(./assets/data/fonts/rh/RedHatDisplay-Medium.ttf);
+}
+
 body{
     background-color: #F8FFCC;
     margin: 0;
     padding: 0;
     /* height: calc(100vh - 100px); */
+    font-family: 'RedHatRegular';
 }
 
 body.gradient{
@@ -13,3 +31,4 @@ body.gradient{
     width: 100%;
     display: block;
 }
+
