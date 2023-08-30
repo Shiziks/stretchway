@@ -1,11 +1,13 @@
 .container, .container-fluid{
-    background-color: #F8FFCC;
+    background-color: #f4f2f0;
+    /* #F8FFCC; */
     overflow-x: hidden; 
     /* height: calc(100vh - 100px);  */
 }
 
 .stretchName{
-    color: #8100CA;
+    color: #0d0e10;
+    /* #8100CA; */
     /* Side hamstring stretch */
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -18,7 +20,8 @@
 .imageRow{
     width:80%;
     margin:0px auto;
-    background-color: #8100CA;
+    background-color: #c8fc91;
+    /* #8100CA; */
     border-radius: 15px;
     filter: drop-shadow(3px 3px 7px rgba(129, 0, 202, 0.35));
 
@@ -36,13 +39,15 @@ img {
 }
 
 .descText{
-    border-color: #8100CA;
+    border-color: #0d0e10;
+    /* #8100CA; */
     border-radius: 0px 15px 15px 0px;
 }
 
 ul.descList{
     list-style-type: none;  
-    color: #F1FF99;
+    color: #0d0e10;
+    /* #F1FF99; */
 }
 
 :host .timerClock{
