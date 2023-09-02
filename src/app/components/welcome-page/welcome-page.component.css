@@ -94,6 +94,7 @@ ul>li>button{
     /* text-decoration: underline; */
     background-color: #c8fc91;
     box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;    
+    border-radius:15px;
 }
 
 .helpSection>.h6:hover{

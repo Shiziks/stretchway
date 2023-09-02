@@ -1,7 +1,7 @@
 h1{
-    color: #8100CA;
+    color: #29333d;
     /* Side hamstring stretch */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'RedHatBold', sans-serif;
     font-weight: 600;
     font-size: 4em;
     line-height: 54px;
@@ -9,31 +9,43 @@ h1{
     text-shadow: 1px 1px 5px rgba(129, 0, 202, 0.15);
 }
 .introText{
-    color:#AE4CD5;
+    color:#778592;
     justify-content: right;
     text-align: justify;
 }
 
 .buttonBack> .btn{
-    width: 100%;
+    /* width: 100%;
     background: #F1FF99;
     border-width: 0px 2px 2px 0px;
     border-style: solid;
     border-color: #8100CA;
-    box-shadow: 2px 2px 10px rgba(129, 0, 202, 0.3);
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;    
     border-radius: 3px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #8100CA;
+    color: #8100CA; */
+    width: 100%;
+    border-radius:30px;
+    background-color: #778591;
+    color:#c8fc91;
+    text-transform: uppercase;
+    font-family:RedHatMedium;
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -0.7px, rgba(119, 133, 146, 0.25) 0px 1px 3px -0.7px;
+    border:none;
 }
 
 .goalTime{
-    color:#E788D5;
+    color:#29333d;
     font-size: 45px;
     font-weight: 600;
+    background-color: #c8fc91;
+    border-radius: 15px;
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;    
+    font-family: "RedHatSemiBold";
 }
 
 .goalSubtitle{
@@ -41,9 +53,22 @@ h1{
     font-weight: 400;
 }
 
+.image{
+    border-radius: 15px;
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;    
+
+}
+
 .question{
     text-transform: uppercase;
     font-weight: 700;
-    color:#8100CA;
-    text-decoration: underline;
+    color:#778592;
+    /* text-decoration: underline; */
+    background-color: #c8fc91;
+    border-radius: 15px;
+    font-family: "RedHatSemiBold";
+    padding:3px;
+    padding-left:10px;
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;    
+
 }
