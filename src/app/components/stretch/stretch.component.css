@@ -21,7 +21,7 @@
 }
 
 .colImage{
-    padding:5%;
+    /* padding:5%; */
     border-radius:15px;
 }
 
@@ -34,9 +34,7 @@ img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.stretchDesc{
-    padding: 5%;
-}
+
 
 .containerText{
     border-radius: 15px;
@@ -56,7 +54,8 @@ ul.descList{
 
 }
 
-.innerRow{
+.timerClockRow{
+    width: 100%;
     background-color: white;
     border-radius:15px;
     box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;
@@ -84,6 +83,7 @@ ul.descList{
 
 }
 .btnNext{
+    width: 100%;
     border-radius: 15px;
     background-color: #c8fc91;
     color: rgb(41, 51, 61);
@@ -201,8 +201,8 @@ footer{
     .btnStart .d-flex{
         justify-content: center;
     }
-    .backToMenu{
-        border-bottom: 0.5px solid #778591;
+    .nextStretch{
+        border-bottom: 0.7px solid #778591;
     }
     .nextStretch, .backToMenu{
         justify-content: center;
