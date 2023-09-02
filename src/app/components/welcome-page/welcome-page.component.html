@@ -6,13 +6,22 @@
                     to StretchWay - your personal stretching assistant!
                 </p>
                 <p class="instruction mt-5 m-2">
-                    To start please select what body part you want to stretch:
+                    To start please select a body part you want to stretch:
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row ">
             <div class="col-xxs-12 col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-6 mx-auto text-center">
-                <div class="dropdown">
+                <!-- <div class="col-12 p-2 h4 selectTitle m-0">Select a body part:</div> -->
+                <div class="row bodyParts mx-auto">
+                    <div class="col-12 p-2 bodyPart" (click)="bodyPart('legs')">Legs</div>
+                    <div class="col-12 p-2 bodyPart" (click)="bodyPart('back')">Back</div>
+                    <div class="col-12 p-2 bodyPart" (click)="bodyPart('hips')">Hips</div>
+                    <div class="col-12 p-2 bodyPart" (click)="bodyPart('shoulders')">Shoulders</div>
+                    <div class="col-12 p-2 bodyPart" (click)="bodyPart('body')">Whole Body</div>
+
+                </div>
+                <!-- <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle btn-lg dropdown" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                       Select a body part
                     </button>
@@ -23,11 +32,11 @@
                       <li><button class="dropdown-item p-3" type="button" (click)="bodyPart('shoulders')">Shoulders</button></li>
                       <li><button class="dropdown-item p-3" type="button" (click)="bodyPart('body')">Whole body</button></li>
                     </ul>
-                  </div>
+                  </div> -->
             </div>
         </div>
-        <div class="row helpSection">
-            <a class="col-xxs-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto text-center mt-5 h6 btn" [routerLink]="['/help']">How to properly use this stretching method?</a>
+        <div class="row helpSection mx-auto mt-5 mb-5">
+            <a class="col-xxs-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto text-center h6 btn mb-5" [routerLink]="['/help']">How to properly use this stretching method?</a>
         </div>
     </div>
 
