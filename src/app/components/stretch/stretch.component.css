@@ -1,61 +1,99 @@
 .container, .container-fluid{
-    background-color: #f4f2f0;
-    /* #F8FFCC; */
     overflow-x: hidden; 
-    /* height: calc(100vh - 100px);  */
+    width: 70%;
+    border-radius: 15px;
 }
 
 .stretchName{
-    color: #0d0e10;
-    /* #8100CA; */
-    /* Side hamstring stretch */
-    font-family: 'Poppins', sans-serif;
+    color: rgb(41, 51, 61);
+    font-family: RedHatSemiBold;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 54px;
     text-align: center;
-    text-shadow: 1px 1px 5px rgba(129, 0, 202, 0.15);
+    text-shadow: 1px 1px 5px rgba(41, 51, 61, 0.15);
 }
 
 .imageRow{
-    width:80%;
-    margin:0px auto;
-    background-color: #c8fc91;
-    /* #8100CA; */
     border-radius: 15px;
-    filter: drop-shadow(3px 3px 7px rgba(129, 0, 202, 0.35));
+}
 
+.colImage{
+    padding:5%;
 }
 
 img {
-    /* max-width: 100%;
-    max-height: 100%;
-    overflow: hidden; */
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px;
     height: 100%;
     width: 100%;
     object-fit: cover;
     display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.descText{
-    border-color: #0d0e10;
-    /* #8100CA; */
-    border-radius: 0px 15px 15px 0px;
+.stretchDesc{
+    padding: 5%;
+}
+
+.containerText{
+    border-radius: 15px;
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;
+    background-color: #c8fc91;
+}
+
+
+.descText fa-icon{
+    font-size: 35px;
 }
 
 ul.descList{
     list-style-type: none;  
-    color: #0d0e10;
-    /* #F1FF99; */
+    color: rgb(41, 51, 61);
+    font-size: 18px;
+
 }
 
+.innerRow{
+    background-color: white;
+    border-radius:15px;
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;
+}
 :host .timerClock{
-    font-size:75px;
+    font-size:2.5em;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    color: #FF68B8;
+    color: #778591;
+}
+
+.playIcon{
+    font-size:20px;
+    color: #c8fc91;
+}
+
+.btnStart{
+    border-radius:30px;
+    background-color: #778591;
+    color:#c8fc91;
+    text-transform: uppercase;
+    font-family:RedHatMedium;
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -0.7px, rgba(119, 133, 146, 0.25) 0px 1px 3px -0.7px;
+
+}
+.btnNext{
+    border-radius: 15px;
+    background-color: #c8fc91;
+    color: rgb(41, 51, 61);
+    text-transform: uppercase;
+    font-family:RedHatBold;
+    box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -0.7px, rgba(119, 133, 146, 0.25) 0px 1px 3px -0.7px;
+}
+.btnNext fa-icon{
+    font-size:1.2em;
+}
+
+.button{
+    color:rgb(41, 51, 61);
 }
 
 .buttonStart>.btn{
@@ -80,6 +118,12 @@ ul.descList{
     margin:0px auto;
 }
 
+.nextStretch{
+    text-align: end;
+    justify-content: flex-end;
+   
+}
+
 .buttonBack> .btn{
     width: 100%;
     background: #F1FF99;
@@ -94,24 +138,27 @@ ul.descList{
     font-size: 20px;
     line-height: 30px;
     color: #8100CA;
-
 }
 
 footer{
     border-top: 0.6px solid pink;
 }
 
+.hide{
+    display: none;
+}
+
 @media screen and (max-width:992px){
     img{
         border-radius: 15px 15px 0px 0px;
     }
-    .descText{
+    .descText fa-icon{
         padding-top: 2%;
         padding-bottom: 2%;
-        font-size: 18px;
+        font-size: 30px;
     }
     .stretchName{
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
 }
 
@@ -121,8 +168,53 @@ footer{
 
     }
     .stretchName{
-        font-size: 2.2em;
+        font-size: 2.1em;
+        line-height: 120%;
+    }
+    .descText fa-icon{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 28px;
     }
 }
 
+@media screen and (max-width:576px){
+    .playButton, .stopButton{
+        text-align: center!important;
+        padding: 0px!important;
+        margin-bottom:15px!important;
+    }
+    .btnStart{
+        width: 80%;
+    }
+    .btnStart .d-flex{
+        justify-content: center;
+    }
+    .backToMenu{
+        border-bottom: 0.5px solid #778591;
+    }
+    .nextStretch, .backToMenu{
+        justify-content: center;
+    }
+    :host .timerClock{
+        font-size: 2em;
+    }
+    .stretchName{
+        font-size: 1.8em;
+        line-height: 120%;
+    }
+    .descText fa-icon{
+        font-size: 25px;
+    }
+}
 
+@media screen and (max-width:490px){
+    .stretchName{
+        font-size: 1.1em;
+        line-height: 120%;
+    }
+    .descText fa-icon{
+        font-size: 20px;
+    }
+
+}

@@ -1,6 +1,6 @@
 footer{
     margin: 0px auto;
-    color:#8100CA;
+    color:#788591;
     position:relative;
     /* bottom:0px; */
     /* z-index: 0;
@@ -14,7 +14,7 @@ footer>.row{
     max-width: 100%;
 }
 footer>p, ul>li>a{
-    color:#8100CA;
+    color:#788591;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     text-decoration: none;

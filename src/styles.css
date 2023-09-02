@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-    font-family: RedHatBlack;
-    src: url(./assets/data/fonts/rh/RedHatDisplay-Black.ttf);
+    font-family: RedHatSemiBold;
+    src: url(./assets/data/fonts/rh/RedHatDisplay-SemiBold.ttf);
 }
 @font-face {
     font-family: RedHatRegular;
@@ -16,12 +16,19 @@
     src: url(./assets/data/fonts/rh/RedHatDisplay-Medium.ttf);
 }
 
+@font-face {
+    font-family: RedHatBold;
+    src: url(./assets/data/fonts/rh/RedHatDisplay-Bold.ttf);
+}
+
 body{
-    background-color: #F8FFCC;
+    background-color: #f0f3f4;
+    /* #F8FFCC; */
     margin: 0;
     padding: 0;
     /* height: calc(100vh - 100px); */
     font-family: 'RedHatRegular';
+    color: #303c48;
 }
 
 body.gradient{

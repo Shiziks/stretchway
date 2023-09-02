@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataServiceService } from 'src/app/services/data-service.service';
 import { Area, Stretches } from 'src/app/interfaces/stretches';
-import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { faCaretLeft, faCaretRight, faArrowCircleDown, faPlayCircle, faPlay, faStop } from '@fortawesome/free-solid-svg-icons';
 import { merge } from 'rxjs';
 
 
@@ -26,6 +26,11 @@ export class StretchComponent implements OnInit {
   newData:any=[];
   timeout:any;
   num:any=30;
+  faDown=faArrowCircleDown;
+  circledNumbers=['&#9312;', '&#9313;',"&#9314;","&#9315;", "&#9316;","&#9317;", "&#9318;", "&#9319;", "&#9320;", "&#9321;"];
+  showDesc:boolean=false;
+  playIcon=faPlay;
+  stopIcon=faStop;
 
   constructor(private activatedRoute:ActivatedRoute, 
     private stretchService:DataServiceService,
@@ -93,6 +98,12 @@ export class StretchComponent implements OnInit {
   stopCount(){
     //nema zvuka
     clearTimeout(this.timeout);
+  }
+
+  descShow(){
+    console.log("show");
+    this.showDesc=!this.showDesc;
+    console.log(this.showDesc);
   }
 
 

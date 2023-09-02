@@ -1,6 +1,6 @@
     <ng-container *ngIf="data">
-        <div class="container-fluid middle mt-5">
-            <div class="row text-center">
+        <div class="container middle mt-2 mb-5">
+            <!-- <div class="row text-center">
                 <div class="col">
                     <ng-container *ngIf="data.sides; else oneSide">
                         <h1 class="stretchName">{{data.name}} - {{side}} SIDE</h1>
@@ -9,33 +9,119 @@
                         <h1 class="stretchName">{{data.name}}</h1>
                     </ng-template>
                 </div>
-            </div>
-            <div class="row text-center imageRow stretchDesc mt-5">
-                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 p-0 imageCol my-auto">
+            </div> -->
+            <div class="row text-center imageRow">
+                <div class="col-12 my-auto mx-auto colImage">
                     <div class="stretchImage">
                         <img src={{data.image}} alt="" class="">
                     </div>
                 </div>
-                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 descText my-auto">
-                    <ul class="descList p-0 m-0 text-start">
-                        <ng-container *ngFor="let d of data.description">
-                            <li class="p-1">- {{d}}</li>
+            </div>
+<!-- ................................................................................................................................ -->
+<!-- 
+            <div class="row text-centers stretchDesc">
+                <div class="col-12 my-auto mx-auto column">
+                    <ng-container *ngIf="data.sides; else oneSide">
+                        <h1 class="stretchName">{{data.name}} - {{side}} SIDE</h1>
+                    </ng-container>
+                    <ng-template #oneSide>
+                        <h1 class="stretchName">{{data.name}}</h1>
+                    </ng-template>
+                </div>
+            </div> -->
+<!-- ................................................................................................................................ -->
+
+            <div class="row text-center imageRow stretchDesc pt-0 pb-3">
+                <div class="containerText">
+                    <div class="row  inner d-flex align-items-center mt-2">
+                        <div class="col-9 col-xs-10 col-sm-10 col-md-10 col-lg-11 descText column">
+                            <div class="title">
+                                <ng-container *ngIf="data.sides; else oneSide">
+                                    <h1 class="stretchName">{{data.name}} - {{side}} SIDE</h1>
+                                </ng-container>
+                                <ng-template #oneSide>
+                                    <h1 class="stretchName">{{data.name}}</h1>
+                                </ng-template>
+                            </div>
+                        </div>
+                        <div class="col-3 col-xs-2 col-sm-2 col-md-2 col-lg-1 descText column h1 text-end ps-0" (click)="descShow()">
+                            <fa-icon [icon]="faDown" class="me-2"></fa-icon>
+                        </div>
+                    </div>
+    
+                    <ul class="descList p-0 m-0 text-start pb-1 col-12"  [ngClass]="!showDesc? 'hide':''">
+                        <ng-container *ngFor="let d of data.description; let j=index">
+                            <li class="p-1"><span [innerHTML]="circledNumbers[j]" class="me-2"></span> {{d}}</li>
                         </ng-container>
-                        <!-- <li class="p-1">Keep the spine lengthened through the torso and firm your abdominals.</li>
-                        <li class="p-1">Squeeze your knees and reach through your toes to extend your legs.</li>
-                        <li class="p-1">Draw the hands overhead and take your gaze to your fingertips.</li>
-                        <li class="p-1">Be cautious of your low spine and hyperextension.</li> -->
                     </ul>
                 </div>
+
             </div>
 
-            <div class="row timerClockRow mt-5">
-                <div class="col-xxs-12 col-xs-12 col-sm-12 com-md-12 col-lg-6 col-xl-6 col-xxl-6 timerClock mx-auto text-center">
-                    <span class="clock"></span>
-                    <countdown #cd [config]="{leftTime: num, demand: true, format: 'm:s'}" class="timerClock"></countdown>
+            <div class="row timerClockRow mt-2 mb-3">
+                <div class="row col-11 mx-auto innerRow">
+                    <!-- <div class="col playButton text-end my-auto p-0 pe-2">
+                        <div class="btn btnStart pt-1 pb-1" (click)="cd.stop(); stopCount()">
+                           <div class="d-flex align-items-center">
+                                <fa-icon [icon]="stopIcon" class="playIcon me-2"></fa-icon>
+                                Stop
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col timerClock mx-auto text-center p-0">
+                        <span class="clock"></span>
+                        <countdown #cd [config]="{leftTime: num, demand: true, format: 'm:s'}" class="timerClock"></countdown>
+                        <!-- <span><fa-icon [icon]="playIcon" class="me-2 playIcon"></fa-icon></span> -->
+                    </div>
+                    <!-- <div class="col playButton text-start my-auto p-0 ps-2">
+                        <div class="btn btnStart pt-1 pb-1" (click)="cd.restart(); cd.begin(); startCount(audioTone)">
+                           <div class="d-flex align-items-center">
+                                <fa-icon [icon]="playIcon" class="playIcon me-2"></fa-icon>
+                                Start
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row col-11 mx-auto mb-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 order-2 order-sm-1 stopButton text-end my-auto p-0 pe-2">
+                        <div class="btn btnStart pt-1 pb-1" (click)="cd.stop(); stopCount()">
+                           <div class="d-flex align-items-center">
+                                <fa-icon [icon]="stopIcon" class="playIcon me-2"></fa-icon>
+                                Stop
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg playButton text-start my-auto p-0 ps-2 order-1 order-sm-2 ">
+                        <div class="btn btnStart pt-1 pb-1" (click)="cd.restart(); cd.begin(); startCount(audioTone)">
+                           <div class="d-flex align-items-center">
+                                <fa-icon [icon]="playIcon" class="playIcon me-2"></fa-icon>
+                                Start
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="row nextButtons">
+                <div class="col-11 mx-auto mb-3 btnNext">
+                    <div class="row d-flex justify-content-between">
+                        <div class="text-start col-12 col-xs-12 col-sm-6">
+                            <div class="d-flex align-items-end backToMenu">
+                                <div class="btn align-items-center button" (click)="goBack()">
+                                    <fa-icon [icon]="leftSign" class="me-2"></fa-icon>Back to menu</div>
+                            </div>
+                        </div>
+                        <div class="text-end col-12 col-xs-12 col-sm-6">
+                            <div class="d-flex align-items-center nextStretch">
+                                <div class="btn  button align-items-center" (click)="nextStretch()">
+                                    Next Stretch <fa-icon [icon]="rightSign" class="ms-2"></fa-icon></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row button mt-5 pb-3 d-flex justify-content-center">
+            <!-- <div class="row button mt-5 pb-3 d-flex justify-content-center">
                 <div class="col-xxs-12 col-xs-12 m-1 col-sm-12 m-sm-1 col-md-10 m-md-1 col-lg-10 m-lg-1 col-xl-3 m-xl-0 col-xxl-3 m-xxl-0 buttonBack text-end">
                     <div class="btn btn-secondary align-items-center" (click)="goBack()">
                         <fa-icon [icon]="leftSign" class="me-2"></fa-icon>Back to menu</div>
@@ -56,10 +142,10 @@
 
        
             
-            </div>
+            </div> -->
+<!-- ................................................................................................................................ -->
             <audio src="../../../assets/data/Atone.mp3" id="my_audio" #audioTone></audio>
-    
-    
+
         </div>
     </ng-container>
 
