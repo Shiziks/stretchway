@@ -20,6 +20,7 @@
 
 .colImage{
     padding:5%;
+    border-radius:15px;
 }
 
 img {
@@ -149,9 +150,7 @@ footer{
 }
 
 @media screen and (max-width:992px){
-    img{
-        border-radius: 15px 15px 0px 0px;
-    }
+
     .descText fa-icon{
         padding-top: 2%;
         padding-bottom: 2%;
@@ -163,6 +162,9 @@ footer{
 }
 
 @media screen and (max-width:768px){
+    .container{
+        width: 80%;
+    }
     .row.button{
         width:100%;
 
@@ -179,6 +181,9 @@ footer{
 }
 
 @media screen and (max-width:576px){
+    .container{
+        width: 95%;
+    }
     .playButton, .stopButton{
         text-align: center!important;
         padding: 0px!important;
@@ -209,6 +214,9 @@ footer{
 }
 
 @media screen and (max-width:490px){
+    .container{
+        width: 97%;
+    }
     .stretchName{
         font-size: 1.1em;
         line-height: 120%;
