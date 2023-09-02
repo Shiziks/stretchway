@@ -96,6 +96,10 @@ ul.descList{
 .button{
     color:rgb(41, 51, 61);
 }
+.button:hover{
+    color:rgba(41, 51, 61, 0.8);
+    cursor:pointer;
+}
 
 .buttonStart>.btn{
     width:100%;
