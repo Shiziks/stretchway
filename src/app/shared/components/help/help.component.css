@@ -40,7 +40,7 @@ h1{
 
 .goalTime{
     color:#29333d;
-    font-size: 45px;
+    font-size: 3.5em;
     font-weight: 600;
     background-color: #c8fc91;
     border-radius: 15px;
@@ -71,4 +71,37 @@ h1{
     padding-left:10px;
     box-shadow: rgba(119, 133, 146, 0.2) 0px 2px 5px -1px, rgba(119, 133, 146, 0.25) 0px 1px 3px -1px;    
 
+}
+
+@media screen and (max-width:992px){
+    h1{
+       font-size: 3.7em;
+    }
+}
+
+@media screen and (max-width:768px){
+    h1{
+       font-size: 3.2em;
+    }
+    .goalTime{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width:576px){
+    h1{
+       font-size: 2.8em;
+    }
+    .goalTime{
+        font-size: 2.6em;
+    }
+}
+
+@media screen and (max-width:490px){
+ h1{
+    font-size: 2.3em;
+ }
+ .goalTime{
+    font-size: 1.9em;
+}
 }
