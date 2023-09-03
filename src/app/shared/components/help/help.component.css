@@ -40,7 +40,7 @@ h1{
 
 .goalTime{
     color:#29333d;
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: 600;
     background-color: #c8fc91;
     border-radius: 15px;
@@ -84,7 +84,7 @@ h1{
        font-size: 3.2em;
     }
     .goalTime{
-        font-size: 3em;
+        font-size: 2.9em;
     }
 }
 
@@ -93,7 +93,7 @@ h1{
        font-size: 2.8em;
     }
     .goalTime{
-        font-size: 2.6em;
+        font-size: 2.5em;
     }
 }
 
