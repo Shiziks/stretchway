@@ -32,7 +32,12 @@
     
                     <ul class="descList p-0 m-0 text-start pb-1 col-12"  [ngClass]="!showDesc? 'hide':''">
                         <ng-container *ngFor="let d of data.description; let j=index">
-                            <li class="p-1"><span [innerHTML]="circledNumbers[j]" class="me-2"></span> {{d}}</li>
+                            <li class="row d-flex">
+                                <span [innerHTML]="circledNumbers[j]" class="pb-2 col-1 pe-0 align-items-center my-auto mx-auto text-center"></span> 
+                                <span class="col-11 ps-0 pe-4 pb-2">
+                                    {{d}}
+                                </span>
+                                </li>
                         </ng-container>
                     </ul>
                 <!-- </div> -->
