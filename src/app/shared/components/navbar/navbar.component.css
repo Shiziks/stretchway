@@ -10,21 +10,21 @@
 }
 @media screen and (max-width: 1200px){
     .navbar-brand>img{
-        width:33%;
+        width:35%;
     }
 }
 @media screen and (max-width: 992px){
     .navbar-brand>img{
-        width:40%;
+        width:45%;
     }
 }
 @media screen and (max-width: 768px){
     .navbar-brand>img{
-        width:45%;
+        width:50%;
     }
 }
 @media screen and (max-width: 576px){
     .navbar-brand>img{
-        width:50%;
+        width:70%;
     }
 }
