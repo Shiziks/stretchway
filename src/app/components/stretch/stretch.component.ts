@@ -98,6 +98,7 @@ export class StretchComponent implements OnInit {
   stopCount(){
     //nema zvuka
     clearTimeout(this.timeout);
+    this.timeout=false;
   }
 
   descShow(){
