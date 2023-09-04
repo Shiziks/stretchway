@@ -147,6 +147,16 @@ ul.descList{
     color: #8100CA;
 }
 
+button.btn.btnStart:active {
+    background-color: #e0e6eb;
+    border: 1px solid #778591;
+    color: #778591;
+}
+button.btn.btnStart:active>div>fa-icon {
+
+    color: #778591;
+}
+
 footer{
     border-top: 0.6px solid pink;
 }
